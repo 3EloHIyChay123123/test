@@ -10,7 +10,7 @@ local TS = game:GetService("TweenService")
 
 local Plr = Players.LocalPlayer
 local Char = Plr.Character or Plr.CharacterAdded:Wait()
-local Root = workspace.CurrentRooms[tostring(math.max(unpack(tb)) - 1)]
+local Root = Char:WaitForChild("HumanoidRootPart")
 local Hum = Char:WaitForChild("Humanoid")
 
 local FindPartOnRayWithIgnoreList = workspace.FindPartOnRayWithIgnoreList
@@ -160,7 +160,7 @@ Creator.runEntity = function(entity)
     for _, room in next, workspace.CurrentRooms:GetChildren() do
         if room:FindFirstChild("Nodes") then
             for _, node in next, room.Nodes:GetChildren() do
-                nodes[#nodes + 1] = node
+                nodes[#nodes - 1] = node
             end
         end
     end
