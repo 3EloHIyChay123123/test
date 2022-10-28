@@ -160,7 +160,7 @@ Creator.runEntity = function(entity)
     for _, room in next, workspace.CurrentRooms:GetChildren() do
         if room:FindFirstChild("Nodes") then
             for _, node in next, room.Nodes:GetChildren() do
-                nodes[#nodes - 1] = node
+                nodes[#nodes + 1] = node
             end
         end
     end
@@ -185,7 +185,7 @@ Creator.runEntity = function(entity)
     local movementCon; movementCon = RS.Stepped:Connect(function()
         if entity.Config.CanKill and not Char:GetAttribute("Hiding") then
             local posA = entity.Model.PrimaryPart.Position
-            local posB = Root.Position
+            local posB = workspace.CurrentRooms[Plr:GetAttribute("CurrentRoom")]
             local found = FindPartOnRayWithIgnoreList(workspace, Ray.new(posA, (posB - posA).Unit * 100), { entity.Model })
 
             if found and found.IsDescendantOf(found, Char) then
