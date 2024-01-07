@@ -1,0 +1,885 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Rule34NewUI = Instance.new("ScreenGui")
+local MoreFileInfo = Instance.new("Frame")
+local Img = Instance.new("ImageLabel")
+local Exit = Instance.new("TextButton")
+local File = Instance.new("TextBox")
+local Main = Instance.new("Frame")
+local Main_2 = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Pages = Instance.new("Folder")
+local Close = Instance.new("TextButton")
+local Main_3 = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local RandomPageButton = Instance.new("TextButton")
+local Main_4 = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local HelpPageButton = Instance.new("TextButton")
+local Main_5 = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local Pages2 = Instance.new("Folder")
+local RandomPage = Instance.new("Frame")
+local FileTypeDrop = Instance.new("TextButton")
+local Frame = Instance.new("Frame")
+local png = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local gif = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local mp4 = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local jpg = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local jpeg = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local UICorner_10 = Instance.new("UICorner")
+local UICorner_11 = Instance.new("UICorner")
+local Main_6 = Instance.new("Frame")
+local UICorner_12 = Instance.new("UICorner")
+local Textb = Instance.new("TextLabel")
+local SearchButton = Instance.new("TextButton")
+local Main_7 = Instance.new("Frame")
+local UICorner_13 = Instance.new("UICorner")
+local PageTextBox = Instance.new("TextBox")
+local UICorner_14 = Instance.new("UICorner")
+local Main_8 = Instance.new("Frame")
+local UICorner_15 = Instance.new("UICorner")
+local Counter = Instance.new("TextLabel")
+local UICorner_16 = Instance.new("UICorner")
+local TagsTextBox = Instance.new("TextBox")
+local UICorner_17 = Instance.new("UICorner")
+local Main_9 = Instance.new("Frame")
+local UICorner_18 = Instance.new("UICorner")
+local Img_2 = Instance.new("ImageButton")
+local ErrorInf = Instance.new("TextLabel")
+local UICorner_19 = Instance.new("UICorner")
+local HelpPage = Instance.new("Frame")
+local Sounds = Instance.new("Folder")
+
+--Properties:
+
+Rule34NewUI.Name = "Rule34NewUI"
+Rule34NewUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Rule34NewUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MoreFileInfo.Name = "MoreFileInfo"
+MoreFileInfo.Parent = Rule34NewUI
+MoreFileInfo.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+MoreFileInfo.BackgroundTransparency = 0.400
+MoreFileInfo.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MoreFileInfo.BorderSizePixel = 0
+MoreFileInfo.LayoutOrder = 3
+MoreFileInfo.Position = UDim2.new(-0.37557146, 0, -1.15874088, 0)
+MoreFileInfo.Size = UDim2.new(1.83495831, 0, 2.8441658, 0)
+MoreFileInfo.Visible = false
+MoreFileInfo.ZIndex = 10
+
+Img.Name = "Img"
+Img.Parent = MoreFileInfo
+Img.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Img.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Img.LayoutOrder = 3
+Img.Position = UDim2.new(0.185683638, 0, 0.121664852, 0)
+Img.Size = UDim2.new(0.760708988, 0, 0.748964369, 0)
+
+Exit.Name = "Exit"
+Exit.Parent = MoreFileInfo
+Exit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Exit.BackgroundTransparency = 1.000
+Exit.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Exit.BorderSizePixel = 0
+Exit.LayoutOrder = 1
+Exit.Position = UDim2.new(0.0109999999, 0, 0.0960000008, 0)
+Exit.Size = UDim2.new(0.158999994, 0, 0.0350000001, 0)
+Exit.Font = Enum.Font.SourceSans
+Exit.Text = "<"
+Exit.TextColor3 = Color3.fromRGB(255, 255, 255)
+Exit.TextSize = 50.000
+Exit.TextXAlignment = Enum.TextXAlignment.Left
+
+File.Name = "File"
+File.Parent = MoreFileInfo
+File.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+File.BackgroundTransparency = 1.000
+File.BorderColor3 = Color3.fromRGB(0, 0, 0)
+File.BorderSizePixel = 0
+File.Position = UDim2.new(0.214542091, 0, 0.90579921, 0)
+File.Size = UDim2.new(0.785457909, 0, 0.0304843411, 0)
+File.ClearTextOnFocus = false
+File.Font = Enum.Font.Ubuntu
+File.ShowNativeInput = false
+File.Text = ""
+File.TextColor3 = Color3.fromRGB(255, 255, 255)
+File.TextSize = 20.000
+File.TextXAlignment = Enum.TextXAlignment.Left
+
+Main.Name = "Main"
+Main.Parent = Rule34NewUI
+Main.Active = true
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Main.BorderSizePixel = 0
+Main.LayoutOrder = 188
+Main.Position = UDim2.new(0.325347483, 0, 0.320879132, 0)
+Main.Selectable = true
+Main.Size = UDim2.new(0, 621, 0, 32)
+Main.SizeConstraint = Enum.SizeConstraint.RelativeYY
+Main.ZIndex = 500
+
+Main_2.Name = "Main"
+Main_2.Parent = Main
+Main_2.Active = true
+Main_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Main_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Main_2.BorderSizePixel = 0
+Main_2.Position = UDim2.new(-0.150688425, 0, -0.250413895, 0)
+Main_2.Size = UDim2.new(1.18933594, 0, 10.9695787, 0)
+Main_2.ZIndex = 100
+
+UICorner.CornerRadius = UDim.new(0, 10)
+UICorner.Parent = Main_2
+
+Pages.Name = "Pages"
+Pages.Parent = Main_2
+
+Close.Name = "Close"
+Close.Parent = Pages
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 1.000
+Close.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.954999983, 0, 0.0149999997, 0)
+Close.Size = UDim2.new(0.0367193855, 0, 0.0797268227, 0)
+Close.Font = Enum.Font.Ubuntu
+Close.Text = "×"
+Close.TextColor3 = Color3.fromRGB(255, 0, 0)
+Close.TextSize = 40.000
+Close.TextWrapped = true
+
+Main_3.Name = "Main"
+Main_3.Parent = Close
+Main_3.Active = true
+Main_3.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Main_3.BackgroundTransparency = 1.000
+Main_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Main_3.BorderSizePixel = 0
+Main_3.LayoutOrder = -1
+Main_3.Position = UDim2.new(0.00999999978, 0, 0.0930000022, 0)
+Main_3.Size = UDim2.new(1, 0, 0.907904148, 0)
+Main_3.ZIndex = 0
+
+UICorner_2.CornerRadius = UDim.new(0, 4)
+UICorner_2.Parent = Main_3
+
+RandomPageButton.Name = "RandomPageButton"
+RandomPageButton.Parent = Pages
+RandomPageButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+RandomPageButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RandomPageButton.BorderSizePixel = 0
+RandomPageButton.Position = UDim2.new(0.0180000495, 0, 0.033092726, 0)
+RandomPageButton.Size = UDim2.new(0.196645468, 0, 0.0430484749, 0)
+RandomPageButton.AutoButtonColor = false
+RandomPageButton.Font = Enum.Font.Ubuntu
+RandomPageButton.Text = "Get Random File"
+RandomPageButton.TextColor3 = Color3.fromRGB(89, 116, 84)
+RandomPageButton.TextSize = 20.000
+RandomPageButton.TextWrapped = true
+
+Main_4.Name = "Main"
+Main_4.Parent = RandomPageButton
+Main_4.Active = true
+Main_4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Main_4.BackgroundTransparency = 1.000
+Main_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Main_4.BorderSizePixel = 0
+Main_4.LayoutOrder = -1
+Main_4.Position = UDim2.new(0.00312828505, 0, -0.238095641, 0)
+Main_4.Size = UDim2.new(0.99687171, 0, 1.52380919, 0)
+Main_4.ZIndex = 0
+
+UICorner_3.CornerRadius = UDim.new(0, 4)
+UICorner_3.Parent = Main_4
+
+HelpPageButton.Name = "HelpPageButton"
+HelpPageButton.Parent = Pages
+HelpPageButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+HelpPageButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HelpPageButton.BorderSizePixel = 0
+HelpPageButton.Position = UDim2.new(0.231924742, 0, 0.033092726, 0)
+HelpPageButton.Size = UDim2.new(0.0720816925, 0, 0.0430484749, 0)
+HelpPageButton.AutoButtonColor = false
+HelpPageButton.Font = Enum.Font.Ubuntu
+HelpPageButton.Text = "Help"
+HelpPageButton.TextColor3 = Color3.fromRGB(89, 116, 84)
+HelpPageButton.TextSize = 20.000
+HelpPageButton.TextWrapped = true
+
+Main_5.Name = "Main"
+Main_5.Parent = HelpPageButton
+Main_5.Active = true
+Main_5.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Main_5.BackgroundTransparency = 1.000
+Main_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Main_5.BorderSizePixel = 0
+Main_5.LayoutOrder = -1
+Main_5.Position = UDim2.new(0.00312828505, 0, -0.238095641, 0)
+Main_5.Size = UDim2.new(0.99687171, 0, 1.52380919, 0)
+Main_5.ZIndex = 0
+
+UICorner_4.CornerRadius = UDim.new(0, 4)
+UICorner_4.Parent = Main_5
+
+Pages2.Name = "Pages2"
+Pages2.Parent = Main_2
+
+RandomPage.Name = "RandomPage"
+RandomPage.Parent = Pages2
+RandomPage.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+RandomPage.BackgroundTransparency = 1.000
+RandomPage.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RandomPage.BorderSizePixel = 0
+RandomPage.Position = UDim2.new(0, 0, 0.102555081, 0)
+RandomPage.Size = UDim2.new(0.999070883, 0, 0.89735955, 0)
+
+FileTypeDrop.Name = "FileTypeDrop"
+FileTypeDrop.Parent = RandomPage
+FileTypeDrop.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+FileTypeDrop.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FileTypeDrop.Position = UDim2.new(0.456706792, 0, 0.228573695, 0)
+FileTypeDrop.Size = UDim2.new(0.181598529, 0, 0.0571434014, 0)
+FileTypeDrop.AutoButtonColor = false
+FileTypeDrop.Font = Enum.Font.SourceSans
+FileTypeDrop.Text = "File type ▼"
+FileTypeDrop.TextColor3 = Color3.fromRGB(195, 255, 185)
+FileTypeDrop.TextSize = 14.000
+
+Frame.Parent = FileTypeDrop
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BackgroundTransparency = 1.000
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.Position = UDim2.new(0, 0, 0.179999456, 0)
+Frame.Size = UDim2.new(0, 134, 0, 123)
+Frame.Visible = false
+
+png.Name = "png"
+png.Parent = Frame
+png.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+png.BorderColor3 = Color3.fromRGB(0, 0, 0)
+png.Position = UDim2.new(-1.36645872e-06, 0, 0.168780819, 0)
+png.Size = UDim2.new(0.216418818, 0, 0.169442892, 0)
+png.AutoButtonColor = false
+png.Font = Enum.Font.SourceSans
+png.Text = ".png"
+png.TextColor3 = Color3.fromRGB(195, 255, 185)
+png.TextSize = 14.000
+
+UICorner_5.CornerRadius = UDim.new(0, 4)
+UICorner_5.Parent = png
+
+gif.Name = "gif"
+gif.Parent = Frame
+gif.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+gif.BorderColor3 = Color3.fromRGB(0, 0, 0)
+gif.Position = UDim2.new(-1.36645872e-06, 0, 0.826172113, 0)
+gif.Size = UDim2.new(0.216418818, 0, 0.169442952, 0)
+gif.AutoButtonColor = false
+gif.Font = Enum.Font.SourceSans
+gif.Text = ".gif"
+gif.TextColor3 = Color3.fromRGB(195, 255, 185)
+gif.TextSize = 14.000
+
+UICorner_6.CornerRadius = UDim.new(0, 4)
+UICorner_6.Parent = gif
+
+mp4.Name = "mp4"
+mp4.Parent = Frame
+mp4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+mp4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+mp4.Position = UDim2.new(-1.36645872e-06, 0, 0.660475791, 0)
+mp4.Size = UDim2.new(0.216418818, 0, 0.169442832, 0)
+mp4.AutoButtonColor = false
+mp4.Font = Enum.Font.SourceSans
+mp4.Text = ".mp4"
+mp4.TextColor3 = Color3.fromRGB(195, 255, 185)
+mp4.TextSize = 14.000
+
+UICorner_7.CornerRadius = UDim.new(0, 4)
+UICorner_7.Parent = mp4
+
+jpg.Name = "jpg"
+jpg.Parent = Frame
+jpg.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+jpg.BorderColor3 = Color3.fromRGB(0, 0, 0)
+jpg.Position = UDim2.new(-1.36645872e-06, 0, 0.330239147, 0)
+jpg.Size = UDim2.new(0.216418818, 0, 0.169443026, 0)
+jpg.AutoButtonColor = false
+jpg.Font = Enum.Font.SourceSans
+jpg.Text = ".jpg"
+jpg.TextColor3 = Color3.fromRGB(195, 255, 185)
+jpg.TextSize = 14.000
+
+UICorner_8.CornerRadius = UDim.new(0, 4)
+UICorner_8.Parent = jpg
+
+jpeg.Name = "jpeg"
+jpeg.Parent = Frame
+jpeg.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+jpeg.BorderColor3 = Color3.fromRGB(0, 0, 0)
+jpeg.Position = UDim2.new(-1.36645872e-06, 0, 0.494671077, 0)
+jpeg.Size = UDim2.new(0.216418818, 0, 0.169443026, 0)
+jpeg.AutoButtonColor = false
+jpeg.Font = Enum.Font.SourceSans
+jpeg.Text = ".jpeg"
+jpeg.TextColor3 = Color3.fromRGB(195, 255, 185)
+jpeg.TextSize = 14.000
+
+UICorner_9.CornerRadius = UDim.new(0, 4)
+UICorner_9.Parent = jpeg
+
+UICorner_10.CornerRadius = UDim.new(0, 4)
+UICorner_10.Parent = Frame
+
+UICorner_11.CornerRadius = UDim.new(0, 4)
+UICorner_11.Parent = FileTypeDrop
+
+Main_6.Name = "Main"
+Main_6.Parent = FileTypeDrop
+Main_6.Active = true
+Main_6.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Main_6.BackgroundTransparency = 1.000
+Main_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Main_6.BorderSizePixel = 0
+Main_6.LayoutOrder = -1
+Main_6.Position = UDim2.new(0, 0, 0.0920961201, 0)
+Main_6.Size = UDim2.new(1, 0, 0.907904148, 0)
+Main_6.ZIndex = 0
+
+UICorner_12.CornerRadius = UDim.new(0, 4)
+UICorner_12.Parent = Main_6
+
+Textb.Name = "Textb"
+Textb.Parent = RandomPage
+Textb.Active = true
+Textb.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Textb.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Textb.ClipsDescendants = true
+Textb.Position = UDim2.new(0.767050505, 0, 0.87937355, 0)
+Textb.Size = UDim2.new(0.182218567, 0, 0.0571434014, 0)
+Textb.Visible = false
+Textb.Font = Enum.Font.SourceSans
+Textb.Text = ""
+Textb.TextColor3 = Color3.fromRGB(0, 0, 0)
+Textb.TextScaled = true
+Textb.TextSize = 14.000
+Textb.TextWrapped = true
+
+SearchButton.Name = "SearchButton"
+SearchButton.Parent = RandomPage
+SearchButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+SearchButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SearchButton.Position = UDim2.new(0.456706792, 0, 0.882548153, 0)
+SearchButton.Size = UDim2.new(0.181598529, 0, 0.0571434014, 0)
+SearchButton.AutoButtonColor = false
+SearchButton.Font = Enum.Font.SourceSans
+SearchButton.Text = "Search"
+SearchButton.TextColor3 = Color3.fromRGB(195, 255, 185)
+SearchButton.TextSize = 14.000
+
+Main_7.Name = "Main"
+Main_7.Parent = SearchButton
+Main_7.Active = true
+Main_7.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Main_7.BackgroundTransparency = 1.000
+Main_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Main_7.BorderSizePixel = 0
+Main_7.LayoutOrder = -1
+Main_7.Position = UDim2.new(0, 0, 0.0920961201, 0)
+Main_7.Size = UDim2.new(1, 0, 0.907904148, 0)
+Main_7.ZIndex = 0
+
+UICorner_13.CornerRadius = UDim.new(0, 4)
+UICorner_13.Parent = Main_7
+
+PageTextBox.Name = "PageTextBox"
+PageTextBox.Parent = RandomPage
+PageTextBox.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+PageTextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PageTextBox.Position = UDim2.new(0.456590742, 0, 0.131746307, 0)
+PageTextBox.Size = UDim2.new(0, 134, 0, 18)
+PageTextBox.Font = Enum.Font.SourceSans
+PageTextBox.PlaceholderColor3 = Color3.fromRGB(97, 126, 91)
+PageTextBox.PlaceholderText = "Page"
+PageTextBox.Text = ""
+PageTextBox.TextColor3 = Color3.fromRGB(195, 255, 185)
+PageTextBox.TextSize = 14.000
+PageTextBox.TextWrapped = true
+
+UICorner_14.CornerRadius = UDim.new(0, 4)
+UICorner_14.Parent = PageTextBox
+
+Main_8.Name = "Main"
+Main_8.Parent = PageTextBox
+Main_8.Active = true
+Main_8.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Main_8.BackgroundTransparency = 1.000
+Main_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Main_8.BorderSizePixel = 0
+Main_8.LayoutOrder = -1
+Main_8.Position = UDim2.new(0, 0, 0.0920961201, 0)
+Main_8.Size = UDim2.new(1, 0, 0.907904148, 0)
+Main_8.ZIndex = 0
+
+UICorner_15.CornerRadius = UDim.new(0, 4)
+UICorner_15.Parent = Main_8
+
+Counter.Name = "Counter"
+Counter.Parent = RandomPage
+Counter.Active = true
+Counter.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Counter.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Counter.Position = UDim2.new(0.767050505, 0, 0.190478101, 0)
+Counter.Size = UDim2.new(0.182218567, 0, 0.279367745, 0)
+Counter.Font = Enum.Font.SourceSans
+Counter.Text = ""
+Counter.TextColor3 = Color3.fromRGB(0, 0, 0)
+Counter.TextSize = 14.000
+Counter.TextWrapped = true
+Counter.TextXAlignment = Enum.TextXAlignment.Left
+Counter.TextYAlignment = Enum.TextYAlignment.Top
+
+UICorner_16.CornerRadius = UDim.new(0, 10)
+UICorner_16.Parent = RandomPage
+
+TagsTextBox.Name = "TagsTextBox"
+TagsTextBox.Parent = RandomPage
+TagsTextBox.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TagsTextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TagsTextBox.Position = UDim2.new(0.456590742, 0, 0.0385716781, 0)
+TagsTextBox.Size = UDim2.new(0, 134, 0, 19)
+TagsTextBox.Font = Enum.Font.SourceSans
+TagsTextBox.PlaceholderColor3 = Color3.fromRGB(97, 126, 91)
+TagsTextBox.PlaceholderText = "Tags"
+TagsTextBox.ShowNativeInput = false
+TagsTextBox.Text = ""
+TagsTextBox.TextColor3 = Color3.fromRGB(195, 255, 185)
+TagsTextBox.TextSize = 14.000
+
+UICorner_17.CornerRadius = UDim.new(0, 4)
+UICorner_17.Parent = TagsTextBox
+
+Main_9.Name = "Main"
+Main_9.Parent = TagsTextBox
+Main_9.Active = true
+Main_9.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Main_9.BackgroundTransparency = 1.000
+Main_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Main_9.BorderSizePixel = 0
+Main_9.LayoutOrder = -1
+Main_9.Position = UDim2.new(0, 0, 0.0920961201, 0)
+Main_9.Size = UDim2.new(1, 0, 0.907904148, 0)
+Main_9.ZIndex = 0
+
+UICorner_18.CornerRadius = UDim.new(0, 4)
+UICorner_18.Parent = Main_9
+
+Img_2.Name = "Img"
+Img_2.Parent = RandomPage
+Img_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Img_2.BorderColor3 = Color3.fromRGB(195, 255, 185)
+Img_2.Position = UDim2.new(0.0176177267, 0, 0.0126986299, 0)
+Img_2.Size = UDim2.new(0.390513569, 0, 0.936825275, 0)
+Img_2.AutoButtonColor = false
+Img_2.ScaleType = Enum.ScaleType.Fit
+
+ErrorInf.Name = "ErrorInf"
+ErrorInf.Parent = Img_2
+ErrorInf.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ErrorInf.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ErrorInf.Position = UDim2.new(-6.3790975e-07, 0, -3.19040993e-07, 0)
+ErrorInf.Size = UDim2.new(0, 287, 0, 286)
+ErrorInf.SizeConstraint = Enum.SizeConstraint.RelativeXX
+ErrorInf.Visible = false
+ErrorInf.Font = Enum.Font.SourceSans
+ErrorInf.TextColor3 = Color3.fromRGB(0, 0, 0)
+ErrorInf.TextSize = 20.000
+ErrorInf.TextWrapped = true
+ErrorInf.TextXAlignment = Enum.TextXAlignment.Left
+ErrorInf.TextYAlignment = Enum.TextYAlignment.Top
+
+UICorner_19.CornerRadius = UDim.new(0, 4)
+UICorner_19.Parent = Img_2
+
+HelpPage.Name = "HelpPage"
+HelpPage.Parent = Pages2
+HelpPage.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+HelpPage.BackgroundTransparency = 1.000
+HelpPage.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HelpPage.BorderSizePixel = 0
+HelpPage.Position = UDim2.new(0, 0, 0.102555081, 0)
+HelpPage.Size = UDim2.new(0.999070883, 0, 0.89735955, 0)
+
+Sounds.Name = "Sounds"
+Sounds.Parent = Main_2
+
+-- Scripts:
+
+local function ORTNHOX_fake_script() -- Exit.Script 
+	local script = Instance.new('Script', Exit)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Vid.Volume = 0
+		script.Parent.Parent.Vid.Playing = false
+		script.Parent.Parent.Parent.MoreFileInfo.Visible = false
+	end)
+end
+coroutine.wrap(ORTNHOX_fake_script)()
+local function TGQFEHS_fake_script() -- MoreFileInfo.Script 
+	local script = Instance.new('Script', MoreFileInfo)
+
+	local vid = Instance.new("VideoFrame")
+	vid.Looped = true
+	vid.Playing = false
+	vid.Volume = 0
+	vid.Parent = script.Parent.Parent.MoreFileInfo
+	vid.Position = UDim2.new(0.186, 0,0.122, 0)
+	vid.Size = UDim2.new(0.761, 0,0.749, 0)
+	vid.Name = "Vid"
+	
+	local tags = Instance.new("StringValue")
+	tags.Name = "Tags"
+	tags.Parent = script.Parent.Parent.Main.Main.Pages2.RandomPage
+	tags.Value = ""
+	
+	local filetype = Instance.new("StringValue")
+	filetype.Name = "FileType"
+	filetype.Parent = script.Parent.Parent.Main.Main.Pages2.RandomPage
+	filetype.Value = ".png"
+	
+	local filetype = Instance.new("NumberValue")
+	filetype.Name = "Page"
+	filetype.Parent = script.Parent.Parent.Main.Main.Pages2.RandomPage
+	filetype.Value = "0"
+	
+	
+	script:Destroy()
+end
+coroutine.wrap(TGQFEHS_fake_script)()
+local function RSPEPT_fake_script() -- Close.Script 
+	local script = Instance.new('Script', Close)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Parent:Destroy()	
+	end)
+	
+end
+coroutine.wrap(RSPEPT_fake_script)()
+local function JSIIZA_fake_script() -- RandomPageButton.Script 
+	local script = Instance.new('Script', RandomPageButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Pages2.RandomPage.Visible = true
+		script.Parent.Parent.Parent.Pages2.HelpPage.Visible = true
+		script.Parent.Parent.Parent.Sounds.Click:Play()
+	end)
+	
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.TextColor3 = Color3.fromRGB(145, 188, 136)
+		script.Parent.Main.UIStroke.Color = Color3.fromRGB(145, 188, 136)
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.TextColor3 = Color3.fromRGB(89, 116, 84)
+		script.Parent.Main.UIStroke.Color = Color3.fromRGB(89, 116, 84)
+	end)
+end
+coroutine.wrap(JSIIZA_fake_script)()
+local function NOBCCUI_fake_script() -- HelpPageButton.Script 
+	local script = Instance.new('Script', HelpPageButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Pages2.HelpPage.Visible = true
+		script.Parent.Parent.Parent.Pages2.RandomPage.Visible = false
+		script.Parent.Parent.Parent.Sounds.Click:Play()
+	end)
+	
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.TextColor3 = Color3.fromRGB(145, 188, 136)
+		script.Parent.Main.UIStroke.Color = Color3.fromRGB(145, 188, 136)
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.TextColor3 = Color3.fromRGB(89, 116, 84)
+		script.Parent.Main.UIStroke.Color = Color3.fromRGB(89, 116, 84)
+	end)
+end
+coroutine.wrap(NOBCCUI_fake_script)()
+local function RUCSU_fake_script() -- FileTypeDrop.Script 
+	local script = Instance.new('Script', FileTypeDrop)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Frame.Visible = not script.Parent.Frame.Visible
+	end)
+end
+coroutine.wrap(RUCSU_fake_script)()
+local function WCXJE_fake_script() -- png.Script 
+	local script = Instance.new('Script', png)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.Parent.FileType.Value = ".png"
+	end)
+end
+coroutine.wrap(WCXJE_fake_script)()
+local function EYVGMEY_fake_script() -- gif.Script 
+	local script = Instance.new('Script', gif)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.Parent.FileType.Value = ".gif"
+	end)
+end
+coroutine.wrap(EYVGMEY_fake_script)()
+local function TZIKAZ_fake_script() -- mp4.Script 
+	local script = Instance.new('Script', mp4)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.Parent.FileType.Value = ".mp4"
+	end)
+end
+coroutine.wrap(TZIKAZ_fake_script)()
+local function PHSQRHX_fake_script() -- jpg.Script 
+	local script = Instance.new('Script', jpg)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.Parent.FileType.Value = ".jpg"
+	end)
+end
+coroutine.wrap(PHSQRHX_fake_script)()
+local function IWAVA_fake_script() -- jpeg.Script 
+	local script = Instance.new('Script', jpeg)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.Parent.FileType.Value = ".jpeg"
+	end)
+end
+coroutine.wrap(IWAVA_fake_script)()
+local function SLJBZ_fake_script() -- SearchButton.Test 
+	local script = Instance.new('Script', SearchButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Textb.Visible = true
+		script.Parent.Visible = false
+		script.Parent.Parent.Textb.Text = "getting data.."
+		local HttpService = game:GetService("HttpService")
+	
+		local data  = game:HttpGet("https://api.rule34.xxx/index.php?page=dapi&s=post&q=index&tags="..script.Parent.Parent.Tags.Value.."&json=1&limit=1000&pid="..script.Parent.Parent.Page.Value)
+		script.Parent.Parent.Textb.Text = "decoding data.."
+	
+	
+		local c
+		local success, data = pcall(function()
+			c = HttpService:JSONDecode(data)
+		end)
+		if success then
+			script.Parent.Parent.Textb.Text = "creating table.."
+			local tabl = {}
+			for i, v in pairs(c) do
+				if script.Parent.Parent.FileType.Value == ".png" then
+					if string.find(v.file_url, ".png") then
+						table.insert(tabl, v.id)
+						script.Parent.Parent.Textb.Text = "file type is .png.."
+					end
+				elseif script.Parent.Parent.FileType.Value == ".jpeg" then
+					script.Parent.Parent.Textb.Text = "file type is .jpeg.."
+					if string.find(v.file_url, ".jpeg") then
+						table.insert(tabl, v.id)
+					end
+				elseif script.Parent.Parent.FileType.Value == ".jpg" then
+					script.Parent.Parent.Textb.Text = "file type is .jpg.."
+					if string.find(v.file_url, ".jpg") then
+						table.insert(tabl, v.id)
+					end
+				elseif script.Parent.Parent.FileType.Value == ".mp4" then
+					script.Parent.Parent.Textb.Text = "file type is .mp4.."
+					if string.find(v.file_url, ".mp4") then
+						table.insert(tabl, v.id)
+					end
+				elseif script.Parent.Parent.FileType.Value == ".gif" then
+					script.Parent.Parent.Textb.Text = "file type is .gif.."
+					if string.find(v.file_url, ".gif") then
+						table.insert(tabl, v.id)
+					end
+				end
+			end
+			script.Parent.Parent.Textb.Text = "doing random.."
+			local image
+			if (next(tabl) == nil) then
+				script.Parent.Parent.FT.Text = "File Type: "
+				script.Parent.Parent.FID.Text = "ID: "
+				script.Parent.Parent.O.Text = "Owner: "
+				script.Parent.Parent.R.Text = "Rating: "
+				script.Parent.Parent.S.Text = "Score: "
+				script.Parent.Parent.T.Text = ""
+				script.Parent.Parent.St.Text = "Status: "
+				script.Parent.Parent.Img.ErrorInf.Text = "Nobody here but us chickens!\n 1. Page you entered doesn't exist\n 2. File type "..script.Parent.Parent.FileType.Value.." not found in this tag or page"
+				script.Parent.Parent.Img.ErrorInf.Visible = true
+				script.Parent.Parent.Textb.Visible = false
+				script.Parent.Parent.Textb.Text = ""
+				script.Parent.Visible = true
+			else
+				image = tabl[math.random(1, #tabl)]
+				script.Parent.Parent.Textb.Text = "downloading file.."
+				local data2 = game:HttpGet("https://api.rule34.xxx/index.php?page=dapi&s=post&q=index&json=1&id="..image)
+				local c2 = HttpService:JSONDecode(data2)
+				writefile("Rule34Image"..script.Parent.Parent.FileType.Value, game:HttpGet(c2[1].file_url))
+				script.Parent.Parent.Img.ErrorInf.Visible = false
+				script.Parent.Parent.Textb.Text = "loading file.."
+				if script.Parent.Parent.FileType.Value == ".png" or script.Parent.Parent.FileType.Value == ".jpg" or script.Parent.Parent.FileType.Value == ".jpeg" then
+					script.Parent.Parent.Parent.Parent.Parent.Parent.MoreFileInfo.Vid.Visible = false
+					script.Parent.Parent.Parent.Parent.Parent.Parent.MoreFileInfo.Img.Visible = true
+					script.Parent.Parent.Img.ErrorInf.Visible = false
+					script.Parent.Parent.Img.ErrorInf.Text = ""
+					script.Parent.Parent.Img.Image = getcustomasset("Rule34Image"..script.Parent.Parent.FileType.Value)
+					script.Parent.Parent.Parent.Parent.Parent.Parent.MoreFileInfo.Img.Image = getcustomasset("Rule34Image"..script.Parent.Parent.FileType.Value)
+				elseif script.Parent.Parent.FileType.Value == ".mp4" then
+					script.Parent.Parent.Parent.Parent.Parent.Parent.MoreFileInfo.Vid.Visible = true
+					script.Parent.Parent.Parent.Parent.Parent.Parent.MoreFileInfo.Img.Visible = false
+					script.Parent.Parent.Img.ErrorInf.Visible = false
+					script.Parent.Parent.Img.ErrorInf.Text = ""
+					script.Parent.Parent.Img.Image = ""
+					script.Parent.Parent.Parent.Parent.Parent.Parent.MoreFileInfo.Vid.Video = getcustomasset("Rule34Image"..script.Parent.Parent.FileType.Value)
+				elseif script.Parent.Parent.FileType.Value == ".gif" then
+					script.Parent.Parent.Img.ErrorInf.Text = "I'm sorry, but there is no preview for the gif, but you can take the gif by clicking on this text and copy the link to the gif"
+					script.Parent.Parent.Parent.Parent.Parent.Parent.MoreFileInfo.Vid.Video = ""
+					script.Parent.Parent.Img.ErrorInf.Visible = true
+					script.Parent.Parent.Parent.Parent.Parent.Parent.MoreFileInfo.Vid.Visible = false
+					script.Parent.Parent.Parent.Parent.Parent.Parent.MoreFileInfo.Img.Visible = true
+					script.Parent.Parent.Img.Image = ""
+					script.Parent.Parent.Parent.Parent.Parent.Parent.MoreFileInfo.Img.Image = ""
+				end
+				script.Parent.Parent.FT.Text = "File Type: "..script.Parent.Parent.FileType.Value
+				script.Parent.Parent.FID.Text = "ID: "..c2[1].id
+				script.Parent.Parent.O.Text = "Owner: "..c2[1].owner
+				script.Parent.Parent.R.Text = "Rating: "..c2[1].rating
+				script.Parent.Parent.S.Text = "Score: "..c2[1].score
+				script.Parent.Parent.T.Text = c2[1].tags
+				script.Parent.Parent.St.Text = "Status: "..c2[1].status
+				script.Parent.Parent.Textb.Text = "done."
+				script.Parent.Parent.Textb.Visible = false
+				script.Parent.Parent.Textb.Text = ""
+				script.Parent.Visible = true
+			end
+		else
+			script.Parent.Parent.FT.Text = "File Type: "
+			script.Parent.Parent.FID.Text = "ID: "
+			script.Parent.Parent.O.Text = "Owner: "
+			script.Parent.Parent.R.Text = "Rating: "
+			script.Parent.Parent.S.Text = "Score: "
+			script.Parent.Parent.T.Text = ""
+			script.Parent.Parent.St.Text = "Status: "
+			script.Parent.Parent.Img.ErrorInf.Text = "Nobody here but us chickens!\n You entered tag incorrectly or it doesn't exist. Do u mean: "
+			script.Parent.Parent.Img.ErrorInf.Visible = true
+			script.Parent.Parent.Textb.Visible = false
+			script.Parent.Parent.Textb.Text = ""
+			script.Parent.Visible = true
+		end
+	end)
+end
+coroutine.wrap(SLJBZ_fake_script)()
+local function AMZJNY_fake_script() -- SearchButton.Rainbow 
+	local script = Instance.new('LocalScript', SearchButton)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.1)do
+		script.Parent.Main.UIStroke.Color = Color3.fromHSV(zigzag(counter),1,1)
+		script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+		counter = counter + 0.01
+	end
+end
+coroutine.wrap(AMZJNY_fake_script)()
+local function PMGUDK_fake_script() -- PageTextBox.LocalScript 
+	local script = Instance.new('LocalScript', PageTextBox)
+
+	
+	
+	local textbox = script.Parent
+	
+	textbox.FocusLost:Connect(function()
+		script.Parent.Parent.Parent.RandomPage.Page.Value = textbox.Text
+	end)
+	
+	repeat wait(0.1)
+		local t1 = game:HttpGet("https://api.rule34.xxx/index.php?page=dapi&s=post&q=index&tags="..game.Players.LocalPlayer.PlayerGui.Rule34.Main.Main.Pages2.RandomPage.Tags.Value.."&json=0&limit=0")
+		t1 = string.sub(t1, 53, 78)
+		t1 = t1:gsub('offset="0"', '')
+		t1 = t1:gsub('%D+', '')
+		t1 = string.sub(t1, 1, 1000)
+		t1 = tonumber(t1)
+		if t1 >= 1000 then
+			textbox.Visible = true
+		else
+			script.Parent.Parent.Parent.RandomPage.Page.Value= 0
+			textbox.Visible = false
+		end
+	until false
+end
+coroutine.wrap(PMGUDK_fake_script)()
+local function OGAE_fake_script() -- Counter.LocalScript 
+	local script = Instance.new('LocalScript', Counter)
+
+	local textbox = script.Parent.Parent.TagsTextBox
+	textbox.FocusLost:Connect(function()
+		for i = 1,2 do
+			local t1 = game:HttpGet("https://api.rule34.xxx/index.php?page=dapi&s=post&q=index&tags="..game.Players.LocalPlayer.PlayerGui.Rule34.Main.Main.Pages2.RandomPage.Tags.Value.."&json=0&limit=0")
+			t1 = string.sub(t1, 53, 78)
+			t1 = t1:gsub('offset="0"', '')
+			t1 = t1:gsub('%D+', '')
+			t1 = string.sub(t1, 1, 1000)
+			script.Parent.Text = "Tag "..script.Parent.Parent.Tags.Value.." has "..t1.." posts\n"
+		end
+	end)
+end
+coroutine.wrap(OGAE_fake_script)()
+local function CGNO_fake_script() -- TagsTextBox.LocalScript 
+	local script = Instance.new('LocalScript', TagsTextBox)
+
+	local textbox = script.Parent
+	
+	textbox.FocusLost:Connect(function()
+		local s = script.Parent.Text
+		s = s:gsub(" ", "%20")
+		s = s:gsub("  ", "%20")
+		s = s:lower()
+		script.Parent.Parent.Tags.Value = s
+	end)
+end
+coroutine.wrap(CGNO_fake_script)()
+local function TFRLVY_fake_script() -- Img_2.Script 
+	local script = Instance.new('Script', Img_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.Parent.MoreFileInfo.Visible = true
+		if script.Parent.Parent.Parent.Parent.Parent.Parent.MoreFileInfo.Vid.Visible == true then
+			script.Parent.Parent.Parent.Parent.Parent.Parent.MoreFileInfo.Vid.Volume = 1
+			script.Parent.Parent.Parent.Parent.Parent.Parent.MoreFileInfo.Vid.Playing = true
+		end
+	end)
+end
+coroutine.wrap(TFRLVY_fake_script)()
+local function LNKQSR_fake_script() -- Main.Script 
+	local script = Instance.new('Script', Main)
+
+	
+	local frame = script.Parent
+	frame.Draggable = true
+end
+coroutine.wrap(LNKQSR_fake_script)()
